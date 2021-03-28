@@ -53,13 +53,13 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 0px -5px;
-        &_botton{
+        &_button{
             margin: 0px 5px 20px 5px ;
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: calc(100%/6 - 10px);
-            height: 34px;
+            padding: 0px 0px 10px 0px;
             border-bottom: 1px solid #D6D6D6;
             font-family: Gilroy;
             font-style: normal;
@@ -67,6 +67,7 @@
             font-size: 16px;
             line-height: 150%;
             color: #333333;
+            background-color: unset;
         }
     }
     .products__box{
@@ -156,6 +157,7 @@
                 line-height: 21px;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
+                color: #333333;
             }
         }
         .products__description_items{
@@ -244,15 +246,12 @@
         }
         .subscribe__input_border{
             border: 1px solid #fff;
-            max-width: 448px;
-            min-height: 113px;
             padding: 14px 15px;
             .subscribe__input_block{
-                width: 418px;
-                padding: 20px 22px;
                 background-color: #ffffff;
                 display: flex;
                 align-items: center;
+                padding: 20px 22px;
                 .subscribe__input{
                     width: 200px;
                     height: 45px;
@@ -298,7 +297,7 @@ h4{
 	text-align: left;
 }
 footer{
-    padding: 85px 0px 60px 0px;
+    padding: 85px 0px 0px 0px;
     .footer{
         display: flex; 
         justify-content: space-between;
@@ -356,6 +355,13 @@ footer{
                 line-height: 150%;
                 color: #333333;
                 & a{
+                    
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #333333;
                     display: block;
                     margin: 0px 0px 15px 0px;
                     &:last-child{
@@ -389,6 +395,10 @@ footer{
             &__box{
                 padding: 30px 0px 0px 0px;
                 border-top: 1px solid #333333;
+                & div{
+                    display: flex;  
+                    align-items: center;
+                }
                 & p{
                     font-family: Gilroy;
                     font-style: normal;
@@ -400,10 +410,6 @@ footer{
                 }
                 & a{
                     margin-right: 20px;
-                }
-                & a img:nth-child(2){
-
-                    top: 2;
                 }
             }
         }
@@ -443,7 +449,7 @@ footer{
     .content .products__box .products__grid .products__item{
        padding: 15px;
     }
-    .content .products__filter_botton{
+    .content .products__filter_button{
         width: 110px;
     }
     .content .products__description .products__description_items{
@@ -471,7 +477,7 @@ footer{
     }
     .content{
         padding: 50px 0px;
-        .products__filter_botton{
+        .products__filter_button{
             width: calc(100%/3 - 10px);
         }
         .products__box .products__grid{
@@ -491,6 +497,7 @@ footer{
             .products__description_items{
                 flex-direction: row;
                 padding: 0;
+                height: unset;
             }
         }
     }
@@ -504,11 +511,10 @@ footer{
 @media (max-width: 575.98px){
     .subscribe .subscribe__main .subscribe__input_border .subscribe__input_block{
         flex-wrap: wrap;
-        width: unset;
     }
     .content{
         padding: 20px 0px;
-        .products__filter_botton{
+        .products__filter_button{
             width: calc(100%/2 - 10px);
         }
         .products__box .products__grid{
